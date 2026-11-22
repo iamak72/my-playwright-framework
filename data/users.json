@@ -1,0 +1,32 @@
+
+{
+    "validUsers": [
+        {
+            "email": "validuser@example.com",
+            "password": "Valid@123",
+            "scenario": "Valid Login",
+            "expectedResult": "success"
+        }
+    ],
+
+    "invalidUsers": [
+        {
+            "email": "invalid@example.com",
+            "password": "Wrong@123",
+            "scenario": "Invalid Password",
+            "expectedResult": "failure"
+        },
+        {
+            "email": "wrongemail",
+            "password": "Valid@123",
+            "scenario": "Invalid Email",
+            "expectedResult": "failure"
+        },
+        {
+            "email": "",
+            "password": "",
+            "scenario": "Empty Credentials",
+            "expectedResult": "failure"
+        }
+    ]
+}
